@@ -13,7 +13,7 @@ no.6A menggunakan mySQL
 
 no.6B menggunakan HTML/HTML5, CSS/CSS3, framework materialize
 
-no.6c menggunakan source no.6B dan CRUD dengan PHP connect dengan mySQL dan juga menggunakan ajax (Semua fitur berfungsi)
+no.6C menggunakan source no.6B lalu CRUD dengan PHP yang terconnect dengan mySQL. Juga menggunakan ajax (Semua fitur berfungsi)
 
 /////////////////////////////
 
