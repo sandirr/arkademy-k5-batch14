@@ -1,0 +1,112 @@
+section {
+    padding-top: 5%;
+}
+
+th {
+    border-radius: 0%;
+    color: white;
+    text-align: center;
+}
+
+tr,
+td {
+    text-align: center;
+    border: none !important;
+}
+
+.card-panel {
+    border-radius: 20px;
+}
+
+.edit {
+    color: greenyellow;
+}
+
+.delete {
+    color: red;
+}
+
+.overlay,
+.overlayEdit,
+.overlayDelete {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.overlay:target,
+.overlayEdit:target,
+.overlayDelete:target {
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+.overlay:target .card-panel,
+.overlayEdit:target .card-panel,
+.overlayDelete:target .card-panel {
+    animation: zoomFade 1s;
+    margin-top: 10%;
+    padding: 2px 24px 50px;
+    position: relative;
+}
+
+.overlay .card-panel .close,
+.overlayEdit .card-panel .close,
+.overlayDelete .card-panel .close {
+    color: red;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    font-size: 24px;
+}
+
+.overlay h4,
+.overlayEdit h4 {
+    font-weight: bold;
+}
+
+form select option,
+form input {
+    font-weight: bold;
+    color: grey;
+}
+
+.add {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 8px;
+}
+
+@keyframes zoomFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.overlayDelete h5 {
+    font-weight: bold;
+}
+
+.overlayDelete .id {
+    color: pink;
+}
+
+.large {
+    font-size: 12rem !important;
+}

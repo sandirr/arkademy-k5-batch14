@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        section {
+            padding-top: 5%;
+        }
+
+        th {
+            border-radius: 0%;
+            color: white;
+            text-align: center;
+        }
+
+        tr,
+        td {
+            text-align: center;
+            border: none !important;
+        }
+
+        .card-panel {
+            border-radius: 20px;
+        }
+
+        .edit {
+            color: greenyellow;
+        }
+
+        .delete {
+            color: red;
+        }
+
+        .overlay,
+        .overlayEdit,
+        .overlayDelete {
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .overlay:target,
+        .overlayEdit:target,
+        .overlayDelete:target {
+            width: auto;
+            height: auto;
+            top: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 9999;
+        }
+
+        .overlay:target .card-panel,
+        .overlayEdit:target .card-panel,
+        .overlayDelete:target .card-panel {
+            animation: zoomFade 1s;
+            margin-top: 10%;
+            padding: 2px 24px 50px;
+            position: relative;
+        }
+
+        .overlay .card-panel .close,
+        .overlayEdit .card-panel .close,
+        .overlayDelete .card-panel .close {
+            color: red;
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            font-size: 24px;
+        }
+
+        .overlay h4,
+        .overlayEdit h4 {
+            font-weight: bold;
+        }
+
+        form select option,
+        form input {
+            font-weight: bold;
+            color: grey;
+        }
+
+        .add {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            border-radius: 8px;
+        }
+
+        @keyframes zoomFade {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .overlayDelete h5 {
+            font-weight: bold;
+        }
+
+        .overlayDelete .id {
+            color: pink;
+        }
+
+        .large {
+            font-size: 12rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper">
+
+                    <a href="" class="brand-logo"><img src="logo.png" width="80px"><img>
+                        <span class="pink-text">ARKADEMY</span><span class="black-text"> COFFEE SHOP</span>
+                    </a>
+                    <a href="" data-target="mobile-nav" class="sidenav-trigger">a</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#overlay" class="btn pink">ADD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="container">
+            <div class="card-panel">
+                <table>
+                    <tr class="grey">
+                        <th>No</th>
+                        <th>Cashier</th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Pevita Pearce</td>
+                        <td>Latte</td>
+                        <td>Drink</td>
+                        <td>Rp. 10.000</td>
+                        <td><a href="#overlayEdit" class="edit">Edit</a> | <a href="#overlayDelete" class="delete">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raisa Andriana</td>
+                        <td>Cake</td>
+                        <td>Food</td>
+                        <td>Rp. 15.000</td>
+                        <td><a href="#overlayEdit" class="edit">Edit</a> | <a href="#overlayDelete" class="delete">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Andi Irsandi</td>
+                        <td>Taro</td>
+                        <td>Food</td>
+                        <td>Rp. 15.000</td>
+                        <td><a href="#overlayEdit" class="edit">Edit</a> | <a href="#overlayDelete" class="delete">Delete</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 card-panel">
+                    <h4>ADD</h4>
+                    <a class="close" href="#">X</a>
+                    <div class="row">
+                        <div class="col l1"></div>
+                        <div class="col l10">
+                            <form action="">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="1">Raisa Andriani</option>
+                                        <option value="2">Pevita Pierce</option>
+                                        <option value="3">Andi Irsandi</option>
+                                    </select>
+                                    <select>
+                                        <option value="1">Ica Tea</option>
+                                        <option value="2">Taro</option>
+                                        <option value="3">Cake</option>
+                                    </select>
+                                    <input value="Drink" type="text" class="validate">
+                                    <input value="Rp. 10.000" type="text" class="validate">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="" class="add btn pink">ADD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlayEdit" id="overlayEdit">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 card-panel">
+                    <h4>EDIT</h4>
+                    <a class="close" href="#">X</a>
+                    <div class="row">
+                        <div class="col l1"></div>
+                        <div class="col l10">
+                            <form action="">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="1">Raisa Andriani</option>
+                                        <option value="2">Pevita Pierce</option>
+                                        <option value="3">Andi Irsandi</option>
+                                    </select>
+                                    <select>
+                                        <option value="1">Ica Tea</option>
+                                        <option value="2">Taro</option>
+                                        <option value="3">Cake</option>
+                                    </select>
+                                    <input value="Drink" type="text" class="validate">
+                                    <input value="Rp. 10.000" type="text" class="validate">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="" class="add btn pink">EDIT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlayDelete" id="overlayDelete">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 card-panel">
+                    <a class="close" href="#">X</a>
+                    <div class="center">
+                        <h5>Data Raisa Andriani ID <span class="id">#1</span></h5>
+                        <i class="material-icons large teal-text text-darken-2">check_circle</i>
+                        <h5>Berhasil dihapus</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var select = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(select);
+        });
+    </script>
+</body>
+
+</html>
