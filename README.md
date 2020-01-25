@@ -1,6 +1,5 @@
 # arkademy-k5-batch14
 
-# arkademy-k3-test
 Jawaban soal-soal test arkademy kloter 5 batch 14
 
 Jawaban-jawaban saya dari soal-soal yang diberikan oleh arkademy untuk mengikuti bootcamp
