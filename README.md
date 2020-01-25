@@ -73,3 +73,6 @@ Saat ingin hapus data, akan muncul alert untuk memastikan kalau data benar-benar
 
 Setelah data dihapus, akan ditampilkan nama cashier dan id-nya untuk memberi tahu user bahwa data berhasil dihapus
 ![7 berhasil dihapus](https://user-images.githubusercontent.com/50796200/73116485-0e7b3a80-3f72-11ea-82b1-00a2ce9f7140.JPG)
+
+Tampilan akhir
+![tampilan akhir](https://user-images.githubusercontent.com/50796200/73116575-85fd9980-3f73-11ea-836b-61278ac06ccc.JPG)
