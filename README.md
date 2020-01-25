@@ -57,10 +57,10 @@ Tampilan overlay saat ADD data
 ![2 tampilan awal add Data](https://user-images.githubusercontent.com/50796200/73116479-0d4a0d80-3f72-11ea-8684-eb8ad48ce9b8.JPG)
 
 Setelah memilih produk, secara otomatis "harga" dan "jenis produk (food/drink)" akan terisi karena menggunakan AJAX
-![3 setelah add data](https://user-images.githubusercontent.com/50796200/73116480-0d4a0d80-3f72-11ea-8e0c-6c4792dbb2f4.JPG)
+![3 tampilan add data](https://user-images.githubusercontent.com/50796200/73116481-0de2a400-3f72-11ea-864a-efac8a7ddccf.JPG)
 
 Setelah add data, maka data baru akan muncul di beranda/index
-![3 tampilan add data](https://user-images.githubusercontent.com/50796200/73116481-0de2a400-3f72-11ea-864a-efac8a7ddccf.JPG)
+![3 setelah add data](https://user-images.githubusercontent.com/50796200/73116480-0d4a0d80-3f72-11ea-8e0c-6c4792dbb2f4.JPG)
 
 Tampilan edit data. Harga dan jenis produk juga terisi secara otomatis dengan AJAX
 ![4 edit](https://user-images.githubusercontent.com/50796200/73116482-0de2a400-3f72-11ea-9dc6-37cd34862849.JPG)
