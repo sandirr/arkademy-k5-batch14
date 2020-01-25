@@ -5,11 +5,15 @@ Jawaban soal-soal test arkademy kloter 5 batch 14
 
 Jawaban-jawaban saya dari soal-soal yang diberikan oleh arkademy untuk mengikuti bootcamp
 
-no.1 menggunakan javascript 
-no.2 - no.5 menggunakan PHP.
+no.1 menggunakan javascript
+
+no.2 - no.5 menggunakan PHP
+
 no.6A menggunakan mySQL
+
 no.6B menggunakan HTML/HTML5, CSS/CSS3, framework materialize
-no.6c menggunakan source no.6B dan CRUD dengan PHP connect dengan mySQL (Semua fitur berfungsi)
+
+no.6c menggunakan source no.6B dan CRUD dengan PHP connect dengan mySQL dan juga menggunakan ajax (Semua fitur berfungsi)
 
 /////////////////////////////
 
@@ -46,5 +50,26 @@ Jawaban No. 6B
 
 Jawaban No. 6C
 
+Tampilan awal
+![tampilan awal](https://user-images.githubusercontent.com/50796200/73116478-07ecc300-3f72-11ea-9b8e-e11ab9ea5b17.JPG)
 
+Tampilan overlay saat ADD data
+![2 tampilan awal add Data](https://user-images.githubusercontent.com/50796200/73116479-0d4a0d80-3f72-11ea-8684-eb8ad48ce9b8.JPG)
 
+Setelah memilih produk, secara otomatis "harga" dan "jenis produk (food/drink)" akan terisi karena menggunakan AJAX
+![3 setelah add data](https://user-images.githubusercontent.com/50796200/73116480-0d4a0d80-3f72-11ea-8e0c-6c4792dbb2f4.JPG)
+
+Setelah add data, maka data baru akan muncul di beranda/index
+![3 tampilan add data](https://user-images.githubusercontent.com/50796200/73116481-0de2a400-3f72-11ea-864a-efac8a7ddccf.JPG)
+
+Tampilan edit data. Harga dan jenis produk juga terisi secara otomatis dengan AJAX
+![4 edit](https://user-images.githubusercontent.com/50796200/73116482-0de2a400-3f72-11ea-9dc6-37cd34862849.JPG)
+
+Setelah edit data, maka data akan berubah sesuai inputan data saat proses edit
+![5 setelah edit](https://user-images.githubusercontent.com/50796200/73116483-0de2a400-3f72-11ea-8eed-0521549c4e29.JPG)
+
+Saat ingin hapus data, akan muncul alert untuk memastikan kalau data benar-benar ingin dihapus
+![6 hapus data](https://user-images.githubusercontent.com/50796200/73116484-0e7b3a80-3f72-11ea-9e07-8ce4848263b4.JPG)
+
+Setelah data dihapus, akan ditampilkan nama cashier dan id-nya untuk memberi tahu user bahwa data berhasil dihapus
+![7 berhasil dihapus](https://user-images.githubusercontent.com/50796200/73116485-0e7b3a80-3f72-11ea-82b1-00a2ce9f7140.JPG)
