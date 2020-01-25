@@ -1,3 +1,14 @@
+/////////////////////////////
+
+Jawaban No. 6B
+
+![index](https://user-images.githubusercontent.com/50796200/71544270-11f1c500-29b8-11ea-9e99-0589ed7458a1.JPG)
+![add](https://user-images.githubusercontent.com/50796200/71544273-174f0f80-29b8-11ea-9a44-d8232fbb759f.JPG)
+![edit](https://user-images.githubusercontent.com/50796200/71544274-1ae29680-29b8-11ea-926f-d4abc79d6bfb.JPG)
+![hapus](https://user-images.githubusercontent.com/50796200/71544276-1e761d80-29b8-11ea-8c37-9d6aee4e55de.JPG)
+
+Menggunakan framework materialize
+
 <p align="center">
   <a href="http://materializecss.com/">
     <img src="http://materializecss.com/res/materialize.svg" width="150">
